@@ -7,7 +7,7 @@ import (
 
 var wg sync.WaitGroup
 
-func main() {
+func aa() {
 	queue := make(chan string)
 	for i := 0; i < 2; i++ { // 2개의 goroutine을 생성
 		wg.Add(1)
