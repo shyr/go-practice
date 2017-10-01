@@ -21,6 +21,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	t.templ.Execute(w, nil)
 }
+
 func main() {
 	// root
 	http.Handle("/", &templateHandler{filename: "chat.html"})
