@@ -8,7 +8,7 @@
 // For example, http://localhost:8080/search?q=golang&timeout=1s serves the
 // first few Google search results for "golang" or a "deadline exceeded" error
 // if the timeout expires.
-package main
+package context
 
 import (
 	"html/template"
